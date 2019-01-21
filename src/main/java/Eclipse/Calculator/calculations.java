@@ -33,7 +33,6 @@ public class calculations {
 			Result = A / B;
 		}
 		return 0;
-
 	}
 
 	static void PrintOut() {
