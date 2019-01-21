@@ -2,56 +2,76 @@ package Eclipse.Calculator;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-    	
-    	System.out.println("1 = + , 2 = - , 3 = / , 4 = *");
-        Scanner mark = new Scanner (System.in);
-        System.out.println("put mark");
-        int s= mark.nextInt();
-        
-        
-        
-       Scanner  in = new Scanner (System.in);
-       System.out.println("first number");
-       int num1 = in.nextInt();
+public class App {
 
-       System.out.println("second number");
+	static Scanner in = new Scanner(System.in);
+	static boolean Running = true;
+	static int Selections;
+	static Double Number1;
+	static Double Number2;
 
-       int num2 = in.nextInt();
+	public static void main(String[] args) {
 
-        if ( s == 1 )
-        {
-            System.out.println(num1 + num2);
-            
-        } else if (s == 2) {
-            System.out.println(num1 - num2);
+		while (Running) {
 
+			System.out.println("1 = + , 2 = - , 3 = / , 4 = *");
 
+			System.out.println("Please Select The Operation From The List");
+			Selections = in.nextInt();
 
+			switch (Selections) {
 
-        } else if (s == 3){
-            System.out.println(num1 / num2);
+			case 1:
+				System.out.println("Enter First Number Please ");
+				Number1 = in.nextDouble();
 
-            } else if (s == 4)
-            System.out.println(num1 * num2);
-         else { System.out.println("put right number");{
-        }
+				System.out.println("Enter Second Number Please");
+				Number2 = in.nextDouble();
 
+				calculations.Addition(Number1, Number2);
+				calculations.PrintOut();
+				break;
 
+			case 2:
+				System.out.println("Enter First Number Please ");
+				Number1 = in.nextDouble();
 
+				System.out.println("Enter Second Number Please");
+				Number2 = in.nextDouble();
 
+				calculations.Subtraction(Number1, Number2);
+				calculations.PrintOut();
+				break;
 
+			case 3:
+				System.out.println("Enter First Number Please ");
+				Number1 = in.nextDouble();
 
+				System.out.println("Enter Second Number Please");
+				Number2 = in.nextDouble();
 
+				calculations.Division(Number1, Number2);
+				calculations.PrintOut();
+				break;
 
- }
- }
+			case 4:
+				System.out.println("Enter First Number Please ");
+				Number1 = in.nextDouble();
 
-        }
+				System.out.println("Enter Second Number Please");
+				Number2 = in.nextDouble();
+
+				calculations.Multiplication(Number1, Number2);
+				calculations.PrintOut();
+				break;
+
+			default:
+				System.out.println("Please Select From The List ");
+				break;
+			}
+			System.out.println("Do You Want To Buy Again ? (Y/N)");
+			String answer = DoYouWannaCalculateAgain.GetPlayAgainAnswer().toUpperCase();
+			Running = DoYouWannaCalculateAgain.PlayAgain(answer);
+		}
+	}
+}
