@@ -11,7 +11,7 @@ public class calculations {
 		Result = A + B;
 		return 0;
 	}
-
+	  
 	static double Subtraction(double A, double B) {
 		Result = A - B;
 		return 0;
@@ -20,9 +20,7 @@ public class calculations {
 	static double Multiplication(double A, double B) {
 		Result = A * B;
 		return 0;
-
 	}
-
 	static double Division(double A, double B) {
 
 		if (A == 0 || B == 0) {
