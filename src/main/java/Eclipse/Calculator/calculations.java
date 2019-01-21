@@ -10,7 +10,6 @@ public class calculations {
 	static double Addition(double A, double B) {
 		Result = A + B;
 		return 0;
-
 	}
 
 	static double Subtraction(double A, double B) {
@@ -37,7 +36,6 @@ public class calculations {
 
 	static void PrintOut() {
 
-		System.out.println("The Result Is :" +""+ Result);
+		System.out.println("The Result Is :" + "" + Result);
 	}
-
 }
