@@ -15,7 +15,6 @@ public class calculations {
 	static double Subtraction(double A, double B) {
 		Result = A - B;
 		return 0;
-
 	}
 
 	static double Multiplication(double A, double B) {

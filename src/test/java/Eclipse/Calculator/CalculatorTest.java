@@ -18,5 +18,4 @@ public class CalculatorTest {
 		double actual = calculations.Division(number1, number2);
 		Assert.assertEquals(expected, actual, 0.1);
 	}
-
 }
