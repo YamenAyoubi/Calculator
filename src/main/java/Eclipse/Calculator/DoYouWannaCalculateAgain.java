@@ -11,11 +11,12 @@ public class DoYouWannaCalculateAgain {
 		String upperCaseString = answer.toUpperCase();
 		switch (upperCaseString) {
 		case "Y":
-			System.out.println("****  Welcome Back  ****");
+			System.out.println(" ****  Welcome Back  **** ");
 			return true;
 		default:
-			System.out.println("**** See You Soon ****");
+			System.out.println(" **** See You Soon **** ");
 			return false;
+			
 		}
 	}
 	public static String GetPlayAgainAnswer() {

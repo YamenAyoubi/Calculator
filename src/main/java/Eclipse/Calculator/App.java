@@ -21,44 +21,33 @@ public class App {
 			switch (Selections) {
 
 			case 1:
-				System.out.println("Enter First Number Please ");
-				Number1 = in.nextDouble();
-
-				System.out.println("Enter Second Number Please");
-				Number2 = in.nextDouble();
+				Number1=Input.input1();
+				Number2=Input.input2();
 
 				calculations.Addition(Number1, Number2);
 				calculations.PrintOut();
 				break;
 
 			case 2:
-				System.out.println("Enter First Number Please ");
-				Number1 = in.nextDouble();
+				Number1=Input.input1();
+				Number2=Input.input2();
 
-				System.out.println("Enter Second Number Please");
-				Number2 = in.nextDouble();
 
 				calculations.Subtraction(Number1, Number2);
 				calculations.PrintOut();
 				break;
 
 			case 3:
-				System.out.println("Enter First Number Please ");
-				Number1 = in.nextDouble();
-
-				System.out.println("Enter Second Number Please");
-				Number2 = in.nextDouble();
+				Number1=Input.input1();
+				Number2=Input.input2();
 
 				calculations.Division(Number1, Number2);
 				calculations.PrintOut();
 				break;
 
 			case 4:
-				System.out.println("Enter First Number Please ");
-				Number1 = in.nextDouble();
-
-				System.out.println("Enter Second Number Please");
-				Number2 = in.nextDouble();
+				Number1=Input.input1();
+				Number2=Input.input2();
 
 				calculations.Multiplication(Number1, Number2);
 				calculations.PrintOut();

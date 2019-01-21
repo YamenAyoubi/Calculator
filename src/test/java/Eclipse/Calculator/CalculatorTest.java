@@ -19,3 +19,4 @@ public class CalculatorTest {
 		Assert.assertEquals(expected, actual, 0.1);
 	}
 }
+

@@ -34,6 +34,6 @@ public class calculations {
 
 	static void PrintOut() {
 
-		System.out.println("The Result Is :" + "" + Result);
+		System.out.println("The Result Is :" + " " + Result);
 	}
 }
