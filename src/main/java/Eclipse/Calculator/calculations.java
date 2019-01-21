@@ -38,7 +38,7 @@ public class calculations {
 
 	static void PrintOut() {
 
-		System.out.println(Result);
+		System.out.println("The Result Is :" +""+ Result);
 	}
 
 }
