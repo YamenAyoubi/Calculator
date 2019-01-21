@@ -18,7 +18,6 @@ public class DoYouWannaCalculateAgain {
 			return false;
 		}
 	}
-
 	public static String GetPlayAgainAnswer() {
 		return in.nextLine();
 	}

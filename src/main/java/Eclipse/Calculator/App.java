@@ -11,7 +11,6 @@ public class App {
 	static Double Number2;
 
 	public static void main(String[] args) {
-
 		while (Running) {
 
 			System.out.println("1 = + , 2 = - , 3 = / , 4 = *");
