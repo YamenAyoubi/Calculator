@@ -7,8 +7,8 @@ public class App {
 	static Scanner in = new Scanner(System.in);
 	static boolean Running = true;
 	static int Selections;
-	static Double Number1;
-	static Double Number2;
+	static int Number1;
+	static int Number2;
 
 	public static void main(String[] args) {
 		while (Running) {
