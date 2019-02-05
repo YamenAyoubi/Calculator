@@ -16,7 +16,7 @@ public class App {
 			System.out.println("1 = + , 2 = - , 3 = / , 4 = *");
 
 			System.out.println("Please Select The Operation From The List");
-			Selections = in.nextInt();
+			Selections = ValidNumber.getNumber();
 
 			switch (Selections) {
 

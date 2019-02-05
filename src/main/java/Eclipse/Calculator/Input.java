@@ -11,12 +11,12 @@ public class Input {
 			public static int input1 () {
 				
 	System.out.println("Enter First Number Please ");
-	return Number1 = in.nextInt();
+	return Number1 = ValidNumber.getNumber();
 			}
 			
 			public static int input2 () {
 	
 	System.out.println("Enter Second Number Please");
-	return Number2 = in.nextInt();
+	return Number2 = ValidNumber.getNumber();
 			}
 }
