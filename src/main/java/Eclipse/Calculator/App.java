@@ -11,52 +11,46 @@ public class App {
 	static int Number2;
 
 	public static void main(String[] args) {
+		
 		while (Running) {
 
 			System.out.println("1 = + , 2 = - , 3 = / , 4 = *");
-
 			System.out.println("Please Select The Operation From The List");
 			Selections = ValidNumber.getNumber();
-
+			System.out.println("Enter First Number Please ");
+			Number1=ValidNumber.getNumber();
+			System.out.println("Enter Second Number Please");
+			Number2=ValidNumber.getNumber();
+			
 			switch (Selections) {
 
 			case 1:
-				Number1=Input.input1();
-				Number2=Input.input2();
 
 				calculations.Addition(Number1, Number2);
-				calculations.PrintOut();
 				break;
 
 			case 2:
-				Number1=Input.input1();
-				Number2=Input.input2();
-
 
 				calculations.Subtraction(Number1, Number2);
-				calculations.PrintOut();
 				break;
 
 			case 3:
-				Number1=Input.input1();
-				Number2=Input.input2();
-
+				
 				calculations.Division(Number1, Number2);
-				calculations.PrintOut();
 				break;
 
 			case 4:
-				Number1=Input.input1();
-				Number2=Input.input2();
-
+				
 				calculations.Multiplication(Number1, Number2);
-				calculations.PrintOut();
 				break;
 
 			default:
 				System.out.println("Please Select From The List ");
 				break;
+				
 			}
+			calculations.PrintOut();
+			
 			System.out.println("Do You Want To Buy Again ? (Y/N)");
 			String answer = DoYouWannaCalculateAgain.GetPlayAgainAnswer().toUpperCase();
 			Running = DoYouWannaCalculateAgain.PlayAgain(answer);
