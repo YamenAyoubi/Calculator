@@ -1,10 +1,9 @@
 package Eclipse.Calculator;
 
-import java.util.Scanner;
+
 
 public class App {
 
-	static Scanner in = new Scanner(System.in);
 	static boolean Running = true;
 	static int Selections;
 	static int Number1;
